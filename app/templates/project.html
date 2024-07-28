@@ -1,0 +1,367 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- awesone fonts css-->
+    <link href="{{ url_for('static', filename='css/font-awesome.css') }}" rel="stylesheet" type="text/css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{ url_for('static', filename='css/bootstrap.min.css') }">
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="{ url_for('static', filename='css/style.css') }">
+    <title>ПрофКонсалт</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent" id="gtco-main-nav">
+    <div class="container"><a class="navbar-brand">ПрофКонсалт</a>
+        <button class="navbar-toggler" data-target="#my-nav" onclick="myFunction(this)" data-toggle="collapse"><span
+                class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span></button>
+        <div id="my-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Головна</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Послуги</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">Про нас</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Контакти</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid gtco-banner-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1> Ми обіцяємо принести
+                    найкраще <span>рішення</span> для
+                    для вашого бізнесу </h1>
+                <p>Наші фахівці забезпечать вам бездоганне обслуговування та оптимальні рішення для бухгалтерських і фінансових потреб вашого бізнесу.</p>
+                <a href="#">Зв’яжіться з нами <i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
+            <div class="col-md-6">
+                <div class="card"><img class="card-img-top img-fluid" src="{ url_for('static', filename='images/banner-img.png') }" alt=""></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid gtco-feature" id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="cover">
+                    <div class="card">
+                        <svg
+                                class="back-bg"
+                                width="100%" viewBox="0 0 900 700" style="position:absolute; z-index: -1">
+                            <defs>
+                                <linearGradient id="PSgrad_01" x1="64.279%" x2="0%" y1="76.604%" y2="0%">
+                                    <stop offset="0%" stop-color="rgb(1,230,248)" stop-opacity="1"/>
+                                    <stop offset="100%" stop-color="rgb(29,62,222)" stop-opacity="1"/>
+                                </linearGradient>
+                            </defs>
+                            <path fill-rule="evenodd" opacity="0.102" fill="url(#PSgrad_01)"
+                                  d="M616.656,2.494 L89.351,98.948 C19.867,111.658 -16.508,176.639 7.408,240.130 L122.755,546.348 C141.761,596.806 203.597,623.407 259.843,609.597 L697.535,502.126 C748.221,489.680 783.967,441.432 777.751,392.742 L739.837,95.775 C732.096,35.145 677.715,-8.675 616.656,2.494 Z"/>
+                        </svg>
+                        <!-- *************-->
+
+                        <svg width="100%" viewBox="0 0 700 500">
+                            <clipPath id="clip-path">
+                                <path d="M89.479,0.180 L512.635,25.932 C568.395,29.326 603.115,76.927 590.357,129.078 L528.827,380.603 C518.688,422.048 472.661,448.814 427.190,443.300 L73.350,400.391 C32.374,395.422 -0.267,360.907 -0.002,322.064 L1.609,85.154 C1.938,36.786 40.481,-2.801 89.479,0.180 Z"></path>
+                            </clipPath>
+                            <!-- xlink:href for modern browsers, src for IE8- -->
+                            <image clip-path="url(#clip-path)" xlink:href="{ url_for('static', filename='images/learn-img.jpg') }" width="100%"
+                                   height="465" class="svg__image"></image>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <h2> Ми — Ваші Експерти з Бухгалтерського Консалтингу</h2>
+                <p> Наші послуги допоможуть вам з організацією бухгалтерії, фінансовим аналізом та податковим консультуванням. Ми надаємо підтримку в управлінні фінансами та оптимізації податкових витрат.</p>
+                <p>
+                    <small>Ми прагнемо створити індивідуальні рішення, які відповідають потребам вашого бізнесу, та забезпечити максимальну ефективність у всіх аспектах фінансового управління.
+                    </small>
+                </p>
+                <a href="#">Дізнайтеся більше <i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid gtco-features" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h2> Ознайомтеся з Послугами, які ми пропонуємо </h2>
+                <p> Наші фахівці готові допомогти вам у наступних сферах: бухгалтерський облік, фінансовий аналіз, податкове консультування та фінансове планування.</p>
+                <a href="#">Усі послуги<i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
+            <div class="col-lg-8">
+                <svg id="bg-services"
+                     width="100%"
+                     viewBox="0 0 1000 800">
+                    <defs>
+                        <linearGradient id="PSgrad_02" x1="64.279%" x2="0%" y1="76.604%" y2="0%">
+                            <stop offset="0%" stop-color="rgb(1,230,248)" stop-opacity="1"/>
+                            <stop offset="100%" stop-color="rgb(29,62,222)" stop-opacity="1"/>
+                        </linearGradient>
+                    </defs>
+                    <path fill-rule="evenodd" opacity="0.102" fill="url(#PSgrad_02)"
+                          d="M801.878,3.146 L116.381,128.537 C26.052,145.060 -21.235,229.535 9.856,312.073 L159.806,710.157 C184.515,775.753 264.901,810.334 338.020,792.380 L907.021,652.668 C972.912,636.489 1019.383,573.766 1011.301,510.470 L962.013,124.412 C951.950,45.594 881.254,-11.373 801.878,3.146 Z"/>
+                </svg>
+                <div class="row">
+                    <div class="col">
+                        <div class="card text-center">
+                            <div class="oval"><img class="card-img-top" src="{ url_for('static', filename='images/web-design.png') }" alt=""></div>
+                            <div class="card-body">
+                                <h3 class="card-title">Бухгалтерський Облік</h3>
+                                <p class="card-text">Ми надаємо послуги з ведення бухгалтерії та забезпечення відповідності всім регуляторним вимогам.</p>
+                            </div>
+                        </div>
+                        <div class="card text-center">
+                            <div class="oval"><img class="card-img-top" src="{ url_for('static', filename='images/marketing.png') }" alt=""></div>
+                            <div class="card-body">
+                                <h3 class="card-title">Фінансовий Аналіз</h3>
+                                <p class="card-text">Ми проводимо детальний аналіз фінансових показників, щоб допомогти вам приймати обґрунтовані рішення.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-center">
+                            <div class="oval"><img class="card-img-top" src="{ url_for('static', filename='images/seo.png') }" alt=""></div>
+                            <div class="card-body">
+                                <h3 class="card-title">Податкове Консультування</h3>
+                                <p class="card-text">Наші експерти допоможуть вам оптимізувати податкові витрати та забезпечити відповідність податковому законодавству.</p>
+                            </div>
+                        </div>
+                        <div class="card text-center">
+                            <div class="oval"><img class="card-img-top" src="{ url_for('static', filename='images/graphics-design.png') }" alt=""></div>
+                            <div class="card-body">
+                                <h3 class="card-title">Фінансове Планування</h3>
+                                <p class="card-text">Ми розробимо стратегії для ефективного управління фінансами та досягнення ваших бізнес-цілей.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid gtco-numbers-block">
+    <div class="container">
+        <svg width="100%" viewBox="0 0 1600 400">
+            <defs>
+                <linearGradient id="PSgrad_03" x1="80.279%" x2="0%"  y2="0%">
+                    <stop offset="0%" stop-color="rgb(1,230,248)" stop-opacity="1" />
+                    <stop offset="100%" stop-color="rgb(29,62,222)" stop-opacity="1" />
+
+                </linearGradient>
+
+            </defs>
+            <!-- <clipPath id="clip-path3">
+
+                                      </clipPath> -->
+
+            <path fill-rule="evenodd"  fill="url(#PSgrad_03)"
+                  d="M98.891,386.002 L1527.942,380.805 C1581.806,380.610 1599.093,335.367 1570.005,284.353 L1480.254,126.948 C1458.704,89.153 1408.314,59.820 1366.025,57.550 L298.504,0.261 C238.784,-2.944 166.619,25.419 138.312,70.265 L16.944,262.546 C-24.214,327.750 12.103,386.317 98.891,386.002 Z"></path>
+
+            <clipPath id="ctm" fill="none">
+                <path
+                        d="M98.891,386.002 L1527.942,380.805 C1581.806,380.610 1599.093,335.367 1570.005,284.353 L1480.254,126.948 C1458.704,89.153 1408.314,59.820 1366.025,57.550 L298.504,0.261 C238.784,-2.944 166.619,25.419 138.312,70.265 L16.944,262.546 C-24.214,327.750 12.103,386.317 98.891,386.002 Z"></path>
+            </clipPath>
+
+            <!-- xlink:href for modern browsers, src for IE8- -->
+            <image  clip-path="url(#ctm)" xlink:href="{ url_for('static', filename='images/word-map.png') }" height="800px" width="100%" class="svg__image">
+
+            </image>
+
+        </svg>
+        <div class="row">
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">125</h5>
+                        <p class="card-text">Активних експертів</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">200</h5>
+                        <p class="card-text">Розвиток бізнесу</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">530</h5>
+                        <p class="card-text">Поточних проектів</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">941</h5>
+                        <p class="card-text">Задоволених клієнтів</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid gtco-testimonials">
+    <div class="container">
+        <h2>Що про нас кажуть наші клієнти</h2>
+        <div class="owl-carousel owl-carousel1 owl-theme">
+            <div>
+                <div class="card text-center"><img class="card-img-top" src="{ url_for('static', filename='images/customer1.jpg') }" alt="">
+                    <div class="card-body">
+                        <h5>Ліза Геллі <br/>
+                            <span> Project Manager </span></h5>
+                        <p class="card-text">“Відмінний сервіс і професіоналізм. Ваші рішення допомогли нашій компанії досягти значних результатів.”</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card text-center"><img class="card-img-top" src="{ url_for('static', filename='images/customer2.jpg') }" alt="">
+                    <div class="card-body">
+                        <h5>Міссі Лімана<br/>
+                            <span> Programer </span></h5>
+                        <p class="card-text">“Чудова команда, яка завжди готова допомогти і надати якісні консультації.”</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card text-center"><img class="card-img-top" src="{ url_for('static', filename='images/customer3.jpg') }" alt="">
+                    <div class="card-body">
+                        <h5>Аана Браун<br/>
+                            <span> Designer </span></h5>
+                        <p class="card-text">“Ми задоволені рівнем обслуговування та професіоналізмом вашої компанії.”</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid gtco-features-list">
+    <div class="container">
+        <div class="row">
+            <div class="media col-md-6 col-lg-4">
+                <div class="oval mr-4"><img class="align-self-start" src="{ url_for('static', filename='images/quality-results.png') }" alt=""></div>
+                <div class="media-body">
+                    <h5 class="mb-0">Якісні Результати</h5>
+                    Наша команда гарантує високу якість результатів завдяки професійному підходу та увазі до деталей.
+                </div>
+            </div>
+            <div class="media col-md-6 col-lg-4">
+                <div class="oval mr-4"><img class="align-self-start" src="{ url_for('static', filename='images/analytics.png') }" alt=""></div>
+                <div class="media-body">
+                    <h5 class="mb-0">Аналіз</h5>
+                    Ми забезпечимо глибокий аналіз фінансових даних, що дозволить вам приймати обґрунтовані бізнес-рішенн
+                </div>
+            </div>
+            <div class="media col-md-6 col-lg-4">
+                <div class="oval mr-4"><img class="align-self-start" src="{ url_for('static', filename='images/affordable-pricing.png') }" alt=""></div>
+                <div class="media-body">
+                    <h5 class="mb-0">Доступні Ціни</h5>
+                    Ми пропонуємо конкурентоспроможні ціни на наші послуги без шкоди для якості.
+                </div>
+            </div>
+            <div class="media col-md-6 col-lg-4">
+                <div class="oval mr-4"><img class="align-self-start" src="{ url_for('static', filename='images/easy-to-use.png') }" alt=""></div>
+                <div class="media-body">
+                    <h5 class="mb-0">Простота Використання</h5>
+                    Наші рішення легко інтегруються у ваш бізнес-процес, забезпечуючи максимальний комфорт і ефективність.
+                </div>
+            </div>
+            <div class="media col-md-6 col-lg-4">
+                <div class="oval mr-4"><img class="align-self-start" src="{ url_for('static', filename='images/free-support.png') }" alt=""></div>
+                <div class="media-body">
+                    <h5 class="mb-0">Безкоштовна Підтримка</h5>
+                    Ми надаємо безкоштовну підтримку нашим клієнтам для вирішення будь-яких питань.
+                </div>
+            </div>
+            <div class="media col-md-6 col-lg-4">
+                <div class="oval mr-4"><img class="align-self-start" src="{ url_for('static', filename='images/effectively-increase.png') }" alt=""></div>
+                <div class="media-body">
+                    <h5 class="mb-0">Ефективне Зростання</h5>
+                    Наші послуги допоможуть вам досягти зростання вашого бізнесу та підвищити його ефективність.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid gtco-logo-area">
+    <div class="container">
+        <div class="row">
+            <div class="col"><img src="{ url_for('static', filename='images/logo1.png') }" class="img-fluid" alt=""></div>
+            <div class="col"><img src="{ url_for('static', filename='images/logo2.png') }" class="img-fluid" alt=""></div>
+            <div class="col"><img src="{ url_for('static', filename='images/logo3.png') }" class="img-fluid" alt=""></div>
+            <div class="col"><img src="{ url_for('static', filename='images/logo4.png') }" class="img-fluid" alt=""></div>
+            <div class="col"><img src="{ url_for('static', filename='images/logo5.png') }" class="img-fluid" alt=""></div>
+        </div>
+    </div>
+</div>
+
+<footer class="container-fluid" id="gtco-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6" id="contact">
+                <h4> Зв’яжіться з нами </h4>
+                <input type="text" class="form-control" placeholder="Full Name">
+                <input type="email" class="form-control" placeholder="Email Address">
+                <textarea class="form-control" placeholder="Message"></textarea>
+                <a href="#" class="submit-button">Ознайомитись детальніше <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            </div>
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-6">
+                        <h4>Компанія</h4>
+                        <ul class="nav flex-column company-nav">
+                            <li class="nav-item"><a class="nav-link" href="#">Головна</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Послуги</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Про нас</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">FAQ's</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Контакти</a></li>
+                        </ul>
+                        <h4 class="mt-5">Слідкуйте за нами</h4>
+                        <ul class="nav follow-us-nav">
+                            <li class="nav-item"><a class="nav-link pl-0" href="#"><i class="fa fa-facebook"
+                                                                                      aria-hidden="true"></i></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-twitter"
+                                                                                 aria-hidden="true"></i></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-google"
+                                                                                 aria-hidden="true"></i></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-linkedin"
+                                                                                 aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <h4>Послуги</h4>
+                        <ul class="nav flex-column services-nav">
+                            <li class="nav-item"><a class="nav-link" href="#">Бухгалтерський облік</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Фінансовий аналіз</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Податкове консультування</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Фінансове планування</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Аналіз</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12">
+                        <p>&copy; 2024. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="{ url_for('static', filename='js/jquery-3.3.1.slim.min.js') }"></script>
+<script src="{ url_for('static', filename='js/popper.min.js') }"></script>
+<script src="{ url_for('static', filename='js/bootstrap.min.js') }"></script>
+</body>
+</html>
