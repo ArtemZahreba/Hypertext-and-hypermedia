@@ -22,6 +22,9 @@ def laba_3():
 def laba_4():
     return render_template('laba_4.html')
 
+@app.route('/project')
+def project():
+    return render_template('project.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
